@@ -37,12 +37,12 @@ Always with you 💕`;
         // ✨ Typing effect
         let i = 0;
         function typing() {
-    if (i < text.length) {
-        messageEl.innerHTML += text.charAt(i) === '\n' ? '<br>' : text.charAt(i);
-        i++;
-        setTimeout(typing, 80);
-    }
-}
+            if (i < text.length) {
+                messageEl.innerHTML += text.charAt(i) === '\n' ? '<br>' : text.charAt(i);
+                i++;
+            setTimeout(typing, 80);
+            }
+        }
         typing();
     });
 };
