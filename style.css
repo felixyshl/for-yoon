@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+
+    background: linear-gradient(-45deg, #000000, #1a001a, #330033, #660033);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Tap screen */
+.tap-screen {
+    cursor: pointer;
+    font-size: 1.5rem;
+    animation: pulse 1.5s infinite;
+}
+
+/* Hidden content */
+.hidden {
+    display: none;
+}
+
+/* Heart */
+.heart {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    animation: beat 1.5s infinite;
+}
+
+/* Title */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff4d6d, #ff99cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Message */
+.message {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+/* Floating hearts */
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.hearts span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    opacity: 0.6;
+    animation: floatUp linear infinite;
+}
+
+.hearts span:nth-child(1) { left: 10%; animation-duration: 8s; }
+.hearts span:nth-child(2) { left: 25%; animation-duration: 10s; }
+.hearts span:nth-child(3) { left: 50%; animation-duration: 12s; }
+.hearts span:nth-child(4) { left: 75%; animation-duration: 9s; }
+.hearts span:nth-child(5) { left: 90%; animation-duration: 11s; }
+
+/* Animations */
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(1); opacity: 0.6; }
+    100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes beat {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes pulse {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
