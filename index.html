@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💗</span>
+    <span>💕</span>
+    <span>💞</span>
+</div>
+
+<div class="container" id="container">
+
+    <!-- Tap screen -->
+    <div id="tapScreen" class="tap-screen">
+        <div class="tap-text">💖 Tap to reveal 💖</div>
+    </div>
+
+    <!-- Hidden content -->
+    <div id="content" class="hidden">
+        <div class="heart">❤️</div>
+        <h1 id="title"></h1>
+        <p id="message" class="message"></p>
+    </div>
+
+</div>
+
+<audio id="bg-music" preload="auto">
+    <source src="until_i_found_you.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
