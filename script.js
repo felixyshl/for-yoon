@@ -16,7 +16,7 @@ window.onload = function () {
 
 But you don’t have to carry everything alone.
 
-When you feel arr ngal,
+When you feel discouraged,
 I’ll be your strength and your peace,
 holding your hand
 
