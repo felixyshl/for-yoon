@@ -1,4 +1,4 @@
 I made something just for you…
 Open it when you’re alone 💖
 
-https://felixyshl.github.io/for-yoon/
+https://github.com/felixyshl/for-yoon/
